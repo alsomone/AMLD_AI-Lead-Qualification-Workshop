@@ -21,7 +21,7 @@ Generate questions or a follow-up message when additional information is require
 ## 🧠 Solution Concept
 The prototype follows this general flow:
 
-flowchart TD
+
     A["📥 Marketing Lead"] --> B["📝 Streamlit Lead Form"]
     B --> C["🔗 LangChain Pipeline"]
 
@@ -111,7 +111,6 @@ AI Lead Qualification Workshop
     [OK] Ollama is running
     [OK] Mistral is available
 ----
-[SUCCESS] The workshop environment is ready.
 
 If you see:
 
