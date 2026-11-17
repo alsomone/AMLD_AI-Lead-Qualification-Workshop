@@ -20,12 +20,12 @@ from langchain_ollama import ChatOllama
 # ============================================================
 
 st.set_page_config(
-    page_title="GePeTto Lead Qualification",
+    page_title="GePeTto AI Lead Qualification",
     page_icon="🤖",
     layout="wide",
 )
 
-st.title("🤖 GePeTto Lead Qualification")
+st.title("🤖 GePeTto AI Lead Qualification")
 
 st.markdown(
     """
