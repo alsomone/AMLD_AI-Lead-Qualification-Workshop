@@ -1,5 +1,5 @@
 # AMLD AI Lead Qualification Workshop
-##From Marketing Leads to Explainable Sales Recommendations with AI
+## From Marketing Leads to Explainable Sales Recommendations with AI
 This hands-on workshop demonstrates how AI and LLM pipelines can help bridge the gap between Marketing and Sales by automatically evaluating incoming leads and identifying those with the highest business potential.
 
 Starting from a lead submission form, the prototype combines structured customer information, AI-based analysis, and transparent business rules to generate an explainable lead qualification and recommend the next best action.
