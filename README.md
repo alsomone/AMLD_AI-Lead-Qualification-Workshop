@@ -21,31 +21,20 @@ Generate questions or a follow-up message when additional information is require
 ## 🧠 Solution Concept
 The prototype follows this general flow:
 
-Marketing Lead
-      │
-      ▼
-Streamlit Lead Form
-      │
-      ▼
-LangChain Pipeline
-      │
-      ├───────────────┐
-      ▼               ▼
-Business Fit      Demand Analysis
-Analysis
-      │               │
-      └───────┬───────┘
-              ▼
-     Deterministic Scoring
-              │
-              ▼
-      Qualification Status
-              │
-              ▼
-        Final LLM Synthesis
-              │
-              ▼
-   Explanation + Next Action
+flowchart TD
+    A["📥 Marketing Lead"] --> B["📝 Streamlit Lead Form"]
+    B --> C["🔗 LangChain Pipeline"]
+
+    C --> D["🧠 Business Fit Analysis"]
+    C --> E["📊 Demand Analysis"]
+
+    D --> F["⚙️ Deterministic Scoring"]
+    E --> F
+
+    F --> G["🎯 Qualification Status"]
+    G --> H["🤖 Final LLM Synthesis"]
+    H --> I["💡 Explanation & Next Best Action"]
+    
 The LLM analyzes qualitative information, while Python business rules calculate the qualification score.
 
 This separation is intentional: AI provides interpretation, while deterministic rules provide transparency and auditability.
@@ -110,18 +99,20 @@ The repository contains an automated environment check.
 Run:
 
 python setup_check.py
+
 If everything is configured correctly, you should see:
 
 AI Lead Qualification Workshop
-======================================
-[OK] Python
-[OK] streamlit
-[OK] langchain-core
-[OK] langchain-ollama
-[OK] Ollama is running
-[OK] Mistral is available
-======================================
+----
+    [OK] Python
+    [OK] streamlit
+    [OK] langchain-core
+    [OK] langchain-ollama
+    [OK] Ollama is running
+    [OK] Mistral is available
+----
 [SUCCESS] The workshop environment is ready.
+
 If you see:
 
 [SUCCESS] The workshop environment is ready.
@@ -139,26 +130,15 @@ Streamlit will provide a local URL that you can open in your browser.
 You can then submit a test lead and observe how the AI-assisted qualification pipeline evaluates it.
 
 ## 📁 Repository Structure
-AMLD_AI-Lead-Qualification-Workshop/
-│
-├── app.py
-│   Main Streamlit application and AI qualification pipeline
-│
-├── requirements.txt
-│   Python dependencies required by the workshop
-│
-├── setup_check.py
-│   Checks Python packages, Ollama, and Mistral
-│
-├── README.md
-│   Workshop documentation and setup instructions
-│
-├── .gitignore
-│   Prevents local environments and sensitive files from being committed
-│
-└── data/
-    └── Lead.csv
-        Synthetic lead data used for workshop examples
+
+File	                Purpose
+app.py	                Main Streamlit application and AI qualification pipeline
+requirements.txt	    Python dependencies required for the workshop
+setup_check.py	        Checks Python, Ollama, Mistral, and required packages
+README.md	            Workshop documentation and setup instructions
+.gitignore	            Excludes local environments and sensitive files
+data/Lead.csv	        Synthetic lead data used for workshop examples
+
 ## 🔍 What to Explore During the Workshop
 Participants will be encouraged to experiment with different parts of the solution.
 
