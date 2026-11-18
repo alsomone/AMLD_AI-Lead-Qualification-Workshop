@@ -69,8 +69,8 @@ Python 3.11 or later,
 Visual Studio Code,
 
 Ollama 
-    (irm https://ollama.com/install.ps1 | iex) 
-    or (https://ollama.com/download/windows)
+    (https://ollama.com/download/windows) 
+    or (irm https://ollama.com/install.ps1 | iex)
 
 You should also download or clone this repository to your computer.
 
