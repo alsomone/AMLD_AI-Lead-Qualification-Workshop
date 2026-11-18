@@ -68,7 +68,9 @@ Python 3.11 or later,
 
 Visual Studio Code,
 
-Ollama,
+Ollama 
+    (irm https://ollama.com/install.ps1 | iex) 
+    or (https://ollama.com/download/windows)
 
 You should also download or clone this repository to your computer.
 
@@ -152,13 +154,14 @@ You can then submit a test lead and observe how the AI-assisted qualification pi
 
 ## 📁 Repository Structure
 
-File |.	                    Purpose
-app.py |.	                Main Streamlit application and AI qualification pipeline
-requirements.txt |.	        Python dependencies required for the workshop
-setup_check.py |.	        Checks Python, Ollama, Mistral, and required packages
-README.md |.	            Workshop documentation and setup instructions
-.gitignore |.	            Excludes local environments and sensitive files
-data/Lead.csv |.	        Synthetic lead data used for workshop examples
+| File |	                    Purpose |
+| --- | --- |
+| app.py |	                Main Streamlit application and AI qualification pipeline |
+| requirements.txt |	        Python dependencies required for the workshop |
+| setup_check.py |	        Checks Python, Ollama, Mistral, and required packages |
+| README.md |	            Workshop documentation and setup instructions |
+| .gitignore |	            Excludes local environments and sensitive files |
+| data/Lead.csv |	        Synthetic lead data used for workshop examples |
 
 ## 🔍 What to Explore During the Workshop
 
