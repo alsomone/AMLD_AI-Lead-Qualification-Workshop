@@ -90,7 +90,7 @@ This creates an isolated Python environment for the workshop.
 ## 3. Activate the Environment
 On Windows PowerShell:
 
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 
 When activated, your terminal should start with something similar to:
 
@@ -152,13 +152,13 @@ You can then submit a test lead and observe how the AI-assisted qualification pi
 
 ## 📁 Repository Structure
 
-File	                Purpose
-app.py	                Main Streamlit application and AI qualification pipeline
-requirements.txt	    Python dependencies required for the workshop
-setup_check.py	        Checks Python, Ollama, Mistral, and required packages
-README.md	            Workshop documentation and setup instructions
-.gitignore	            Excludes local environments and sensitive files
-data/Lead.csv	        Synthetic lead data used for workshop examples
+File |.	                    Purpose
+app.py |.	                Main Streamlit application and AI qualification pipeline
+requirements.txt |.	        Python dependencies required for the workshop
+setup_check.py |.	        Checks Python, Ollama, Mistral, and required packages
+README.md |.	            Workshop documentation and setup instructions
+.gitignore |.	            Excludes local environments and sensitive files
+data/Lead.csv |.	        Synthetic lead data used for workshop examples
 
 ## 🔍 What to Explore During the Workshop
 
