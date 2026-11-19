@@ -11,13 +11,14 @@ During the workshop, we will explore a pipeline that transforms a marketing lead
 
 The solution will:
 
-Capture lead information through a Streamlit form.
-Analyze different aspects of the lead in parallel using an LLM.
-Assess business fit, contact relevance, demand potential, purchasing intent, and missing information.
-Calculate an auditable qualification score using deterministic business rules.
-Generate an explanation of the qualification.
-Recommend the next best action for Marketing or Sales.
-Generate questions or a follow-up message when additional information is required.
+- Capture lead information through a Streamlit form.
+- Analyze different aspects of the lead in parallel using an LLM.
+- Assess business fit, contact relevance, demand potential, purchasing intent, and missing information.
+- Calculate an auditable qualification score using deterministic business rules.
+- Generate an explanation of the qualification.
+- Recommend the next best action for Marketing or Sales.
+- Generate questions or a follow-up message when additional information is required.
+
 ## 🧠 Solution Concept
 The prototype follows this general flow:
 
@@ -42,17 +43,17 @@ This separation is intentional: AI provides interpretation, while deterministic 
 ## 🛠️ Technology Stack
 The workshop uses:
 
-Python for the application and business logic,
+- Python for the application and business logic,
 
-Streamlit for the interactive user interface,
+- Streamlit for the interactive user interface,
 
-LangChain for LLM pipeline orchestration,
+- LangChain for LLM pipeline orchestration,
 
-Ollama for running the LLM locally,
+- Ollama for running the LLM locally,
 
-Mistral as the default local language model,
+- Mistral as the default local language model,
 
-GitHub for distributing and versioning the workshop project,
+- GitHub for distributing and versioning the workshop project,
 
 The LLM runs locally through Ollama, so no paid LLM subscription or API credentials are required.
 
@@ -173,29 +174,29 @@ For example:
 
 Compare leads with different:
 
-business types,
+- business types,
 
-contact roles,
+- contact roles,
 
-estimated demand,
+- estimated demand,
 
-areas of interest,
+- areas of interest,
 
-purchasing timeframes,
+- purchasing timeframes,
 
-levels of information completeness
+- levels of information completeness
 
 ### Explore the prompts
 
 Observe how the LLM is instructed to:
 
-use only information provided in the lead form
+- use only information provided in the lead form
 
-avoid inventing company information
+- avoid inventing company information
 
-identify missing information
+- identify missing information
 
-provide evidence for its assessment
+- provide evidence for its assessment
 
 ### Explore the scoring rules
 
@@ -214,15 +215,15 @@ This workshop is designed to run locally.
 
 The prototype:
 
-uses synthetic workshop data,
+- uses synthetic workshop data,
 
-runs the LLM locally through Ollama,
+- runs the LLM locally through Ollama,
 
-does not require paid LLM API credentials,
+- does not require paid LLM API credentials,
 
-is designed for experimentation and learning,
+- is designed for experimentation and learning,
 
-Do not use confidential, personal, customer, or commercially sensitive information when experimenting with the workshop.
+- Do not use confidential, personal, customer, or commercially sensitive information when experimenting with the workshop.
 
 ## ⚠️ Prototype Disclaimer
 
