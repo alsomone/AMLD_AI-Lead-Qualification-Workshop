@@ -147,7 +147,7 @@ Activate your virtual environment if it is not already active:
 
 Then start the Streamlit application:
 
-streamlit run app.py
+`streamlit run app.py`
 
 Streamlit will provide a local URL that you can open in your browser.
 
