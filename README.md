@@ -77,30 +77,30 @@ You should also download or clone this repository to your computer.
 ## 1. Clone the Repository
 Open PowerShell and run:
 
-'git clone https://github.com/alsomone/AMLD_AI-Lead-Qualification-Workshop.git'
+`git clone https://github.com/alsomone/AMLD_AI-Lead-Qualification-Workshop.git`
 
 Then enter the project folder:
 
-'cd AMLD_AI-Lead-Qualification-Workshop'
+`cd AMLD_AI-Lead-Qualification-Workshop`
 
 ## 2. Create a Python Virtual Environment
 
-'python -m venv .venv'
+`python -m venv .venv`
 
 This creates an isolated Python environment for the workshop.
 
 ## 3. Activate the Environment
 On Windows PowerShell:
 
-'.venv\Scripts\Activate.ps1'
+`.venv\Scripts\Activate.ps1`
 
 When activated, your terminal should start with something similar to:
 
-'(.venv) PS C:\...\AMLD_AI-Lead-Qualification-Workshop>'
+`(.venv) PS C:\...\AMLD_AI-Lead-Qualification-Workshop>`
 
 ## 4. Install the Python Dependencies
 
-'python -m pip install -r requirements.txt'
+`python -m pip install -r requirements.txt`
 
 This installs the packages required by the workshop, including Streamlit, LangChain, and the Ollama integration.
 
@@ -110,7 +110,7 @@ Make sure Ollama is installed and running.
 
 Then execute:
 
-'ollama pull mistral'
+`ollama pull mistral`
 
 The model download is several GB, so please complete this step before the workshop.
 
@@ -120,7 +120,7 @@ The repository contains an automated environment check.
 
 Run:
 
-'python setup_check.py'
+`python setup_check.py`
 
 If everything is configured correctly, you should see:
 
@@ -142,7 +142,7 @@ you are ready for the workshop.
 ## ▶️ Running the Application
 Activate your virtual environment if it is not already active:
 
-'.\.venv\Scripts\Activate.ps1'
+`.\.venv\Scripts\Activate.ps1`
 
 Then start the Streamlit application:
 
